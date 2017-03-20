@@ -1,0 +1,115 @@
+accessible: true
+author: Florian Thuin
+context: Donnez vos impressions sur l'activité, répondez franchement !
+environment: mcq
+evaluate: best
+groups: false
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: Impressions sur l'activité
+network_grading: false
+order: 1
+problems:
+    mcq1:
+        name: Durée de l'activité
+        choices:
+        -   valid: true
+            text: Oui
+        -   valid: true
+            text: Non
+        type: multiple-choice
+        limit: 0
+        header: Est-ce que j'aurais eu besoin de **+ de temps** pour faire les exercices
+            ?
+    mcq2:
+        name: Exécution séquentielle
+        choices:
+        -   valid: true
+            text: Oui
+        -   valid: true
+            text: Non
+        type: multiple-choice
+        limit: 0
+        header: Ai-je compris le principe de l'**exécution séquentielle** (exécution
+            des blocs un après l'autre) ?
+    mcq3:
+        choices:
+        -   valid: true
+            text: Oui
+        -   valid: true
+            text: Non
+        header: Ai-je compris le principe des **conditions** ? (si ... faire ... sinon)
+        type: multiple-choice
+        name: Les conditions
+        limit: 0
+    mcq4:
+        type: multiple-choice
+        header: Ai-je compris le principe des **boucles** ? (répéter ...)
+        limit: 0
+        choices:
+        -   text: Oui
+            valid: true
+        -   valid: true
+            text: Non
+        name: Les boucles
+    mcq5:
+        header: Ai-je compris le principe de **fonctions** ? (ensemble de blocs avec
+            un nom)
+        choices:
+        -   valid: true
+            text: Oui
+        -   text: Non
+            valid: true
+        limit: 0
+        name: Les fonctions
+        type: multiple-choice
+    mcq6:
+        choices:
+        -   valid: true
+            text: Oui
+        -   text: Non
+            valid: true
+        name: L'interface
+        limit: 0
+        header: Est-ce que c'était **facile** d'utiliser l'**interface** ? (bouger
+            les blocs, tester le code,...)
+        type: multiple-choice
+    mcq7:
+        choices:
+        -   text: Oui
+            valid: true
+        -   text: Non
+            valid: true
+        header: Est-ce que j'ai envie de **faire d'autres exercices** (jeux à résoudre
+            à l'aide de blocs) **à la maison** ?
+        name: Plus tard
+        type: multiple-choice
+        limit: 0
+    mcq8:
+        limit: 0
+        header: Est-ce que les personnes m'ont assez **aidé pour** réussir à **comprendre**
+            les tâches ?
+        choices:
+        -   text: Oui
+            valid: true
+        -   text: Non
+            valid: true
+        type: multiple-choice
+        name: Aide
+    mcq9:
+        choices:
+        -   valid: true
+            text: Oui
+        -   text: Non
+            valid: true
+        type: multiple-choice
+        limit: 0
+        header: Est-ce que j'aimerais faire ce genre d'activités **à l'école** ?
+        name: A l'école
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
